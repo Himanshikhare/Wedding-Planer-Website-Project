@@ -1,0 +1,292 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: #fff;
+    height: 100vh;
+
+    display: flex;
+    
+}
+.sidebar{
+    background-color: #FBFBFB;
+    width: 20rem;
+    box-shadow: 0 0 5px #000;
+    border-radius: 3%;
+    margin-right: 0.5rem;
+    position: sticky;
+}
+.logo{
+    height: 4rem;
+    width: 95%;
+    position: absolute;
+    line-height: 60px;
+    box-shadow: 0 0 5px rgb(65, 46, 46);
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+    border-radius: 50%;
+}
+.logo a{
+    position: absolute;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000;
+    left: 50px;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.sidebar-options{
+    position: absolute;
+    width: 100%;
+    top: 6rem;
+}
+.sidebar-options li{
+    padding: 8px 16px 8px 16px;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+.sidebar-options li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.sidebar-options li i{
+    padding: 0 1rem;
+    transition: all 0.3s linear;
+}
+.sidebar-options li:hover{
+    box-shadow: 0 0 5px rgb(39, 39, 39);
+}
+.socialmedia{
+    color: black;
+    opacity: 0.75;
+    position: absolute;
+    left: 25%;
+    margin-top: 1rem;
+}
+.socialmedia i{
+    margin-right: 1rem ;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.socialmedia i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.main-content{
+    background-color: #FBFBFB;
+    flex: 1;
+    border-radius: 1rem;
+    overflow:scroll;
+    
+}
+.nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    z-index: 10;/*overlap the items with the navbar so use z-index*/
+    background-color:  #731804;/*rgb(71, 3, 10)*/
+    align-items: center;
+    box-shadow: 0 0 10px 5px #000;
+   
+}
+.nav-caption{
+    margin-left:0.5rem;
+    display: flex;
+    align-items: center;
+}
+.nav p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+.nav i{
+    color: #fff;
+}
+.corner{
+    display: flex;
+    margin-right: 10px;
+}
+.nav .pointer{
+    cursor: pointer;
+}
+.icon{
+    margin-left: 2rem;
+}
+
+.search{
+    margin-right: 1rem;
+}
+.search-btn{
+    height: 25px;
+    width: 8rem;
+    border-radius:100px;
+    border: none;
+}
+@media(max-width:1065px){
+    .hide{
+        display: none;
+    }
+}
+.badge{
+    background-color:#fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    height: 1.75rem;
+    width:fit-content;
+}
+@media(max-width:930px){
+    .hide-2{
+        display: none;
+    }
+}
+.main-content h2{
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+.card{
+    background-color: #fff;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+}
+.box{
+    height: 6rem;
+    width: 35rem;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.title{
+    font-weight: 600;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.information{
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.box i{
+    margin-left: 20rem;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.img:hover{
+   cursor: pointer;
+}
+.forward{
+    margin-left: 20px;
+    margin-top: 95px;
+    color: #cec2c2;
+   font-size: 3rem;
+   cursor: pointer;
+}
+.forward:hover{
+    font-size: 4rem;
+    transition-duration: 1s;
+}
+.footer{
+    margin-top: 10rem;
+    background-color: #fff;
+    padding-top: 10px;
+}
+.footer p{
+    margin-top: 1rem;
+    font-size: 15px;
+}
+.caption{
+    margin-left: 1rem;
+}
+.about{
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+.div1{
+    margin-right: 10rem;
+}
+.div2{
+    margin-right: 10rem;
+}
+.div3{
+    margin-right: 10rem;
+}
+.div4{
+    margin-right: 10rem;
+}
+
+.list{
+    margin-top: 1rem;
+   cursor: pointer;
+   display: flex;
+}
+.line{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid #000 ;
+    margin-left: 3rem;
+}
+.end{
+    margin-top: 5rem;
+    height: 3rem;
+    width: 97%;
+    background-color: #dccbcb;
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+}
+.left img{
+    height: 2rem;
+    width: 2rem;
+    margin-right: 10px;
+}
+.right{
+    display: flex;
+}
+.right i{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.right p{
+    cursor: pointer;
+}
